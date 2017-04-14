@@ -1,0 +1,69 @@
+{
+  "listNetworkDevices": [
+    {
+      "id": "pc",
+      "ip": "127.0.0.1",
+      "listServices": [
+        {
+          "type": "master",
+          "parameters": [
+            { "httpPort": 8083 }
+          ]
+        },
+        {
+          "type": "webApp",
+          "parameters": [
+            { "webPath": "E:\\dw1000test\\webApp" },
+            { "httpPort": 8084 }
+          ]
+        },
+		{
+		"type": "anchor",
+		  "parameters": [
+			{ "anchorId": "1" },
+			{ "portName": "COM1" },
+			{ "coordinateX": "4.8" },
+			{ "coordinateY": "4" }
+		  ]
+		},
+		{
+		"type": "anchor",
+		  "parameters": [
+			{ "anchorId": "5" },
+			{ "portName": "COM1" },
+			{ "coordinateX": "10.1202" },
+			{ "coordinateY": "5.78" }
+		  ]
+		},
+		{
+		"type": "anchor",
+		  "parameters": [
+			{ "anchorId": "2" },
+			{ "portName": "COM1" },
+			{ "coordinateX": "4.8" },
+			{ "coordinateY": "4.7" }
+		  ]
+		},
+		{
+		"type": "anchor",
+		  "parameters": [
+			{ "anchorId": "3" },
+			{ "portName": "COM1" },
+			{ "coordinateX": "1" },
+			{ "coordinateY": "0.3" }
+		  ]
+		},
+		{
+		"type": "Lora" ,
+		  "parameters": [
+			{ "portName": "COM11" }
+		  ]
+		}
+      ]
+    }
+    ],
+      "scene": {
+        "endX": 11.3,
+        "endY": 6.5
+      }
+    }

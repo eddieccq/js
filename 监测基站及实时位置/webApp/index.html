@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8"> 
+    <title>定位演示DEMO</title>
+	<script src="main.js"></script>
+	<style type="text/css">
+	input.tidy {
+		position: relative;
+		display: inline-block;
+		background: #D0EEFF;
+		border: 1px solid #99D3F5;
+		border-radius: 4px;
+		padding: 8px 24px;
+		overflow: hidden;
+		color: #1E88C7;
+		text-decoration: none;
+		text-indent: 0;
+		line-height: 20px;
+	}
+	.tidy:hover {
+    background: #AADFFD;
+    border-color: #78C3F3;
+    color: #004974;
+    text-decoration: none;
+	}
+	canvas#showTemperature{
+	position: relative;
+	left: 100px
+	}
+	div#sidebar {
+	float: right-side;
+    margin: 0;
+    border: 0;
+    width: 36px;
+    background: #F88E8B;
+	color:#fff;
+	box-shadow: 0px 1px 3px rgba(0,0,0,0.12), 0px 1px 2px rgba(0,0,0,0.24);
+	text-align: center;
+	}
+	</style>
+</head>
+<body onload="load()">
+	<p><input class="tidy" type="button" id="btnRunning" value="开始" onclick="btnRunning_click()" />
+	<input class="tidy" type="button" id="btnClear" value="清空轨迹" onclick="btnClear_click()" />
+	<input class="tidy" type="button" id="btnReset" value="重新开始" onclick="btnReset_click()" />
+	<canvas id="showTemperature" width="200" height="40" ></p>
+	<table>
+		<tr>
+			<td><div id="canvasContainer"></div></td>
+			<td><div id="divInfo"></div></td>
+			<td><div id="sidebar"></div></td>	
+		</tr>
+	</table>
+   
+</body>
+</html>
